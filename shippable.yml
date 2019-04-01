@@ -46,7 +46,5 @@ pipelines:
          
         triggeredBy:
           resources:
-            - sample_java_image_test
-          steps:
-            - main_step
+            - C7
         
