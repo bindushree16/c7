@@ -43,4 +43,10 @@ pipelines:
           onExecute:
             - echo "executing task command 1"
             - echo "executing task command 2"
-     
+         
+        triggeredBy:
+          resources:
+            - sample_java_image_test
+          steps:
+            - main_step
+        
