@@ -1,9 +1,9 @@
 resources:
    - name: C7
      type: gitRepo
-     repoPath: deepikasl/sample_java
+     repoPath: bindushree16/c7
      configuration:
-        integrationName: github-subint
+        integrationName: github
         branches:
            except: "*test"
            only: "master*"
