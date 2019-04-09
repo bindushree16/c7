@@ -44,7 +44,26 @@ pipelines:
             - echo "executing task command 1"
             - echo "executing task command 2"
          
-        triggeredBy:
-          resources:
-            - C7
+         triggeredBy:
+           resources:
+             - C7
         
+    steps:
+      - name: in_trigger_step2
+        type: runSh
+        configuration:
+          affinityGroup: test_group 
+        setup:
+          environmentVariables:
+            normal:
+              - ENV1: value1
+              - ENV2: value2
+            encrypted:
+              - SECURE_ENV1: test_value
+              - SECURE_ENV2: test_value
+          runtime: onHost
+        execution:
+          onExecute:
+            - echo "executing task command 1"
+            - echo "executing task command 2"
+         
