@@ -44,9 +44,9 @@ pipelines:
             - echo "executing task command 1"
             - echo "executing task command 2"
          
-         triggeredBy:
-           resources:
-             - C7
+        triggeredBy:
+          resources:
+            - C7
         
     steps:
       - name: in_trigger_step2
