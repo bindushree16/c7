@@ -47,8 +47,6 @@ pipelines:
         triggeredBy:
           resources:
             - C7
-        
-    steps:
       - name: in_trigger_step2
         type: runSh
         configuration:
