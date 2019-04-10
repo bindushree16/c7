@@ -27,7 +27,7 @@ pipelines:
       runtime: onHost-pipe
     steps:
       - name: in_trigger_step
-        type: runSh
+        type: bash
         configuration:
           affinityGroup: test_group 
         setup:
@@ -48,7 +48,7 @@ pipelines:
           resources:
             - C7
       - name: in_trigger_step2
-        type: runSh
+        type: bash
         configuration:
           affinityGroup: test_group 
         setup:
