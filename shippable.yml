@@ -22,7 +22,7 @@ resources:
     initialVersion:
       sha: master
 
-pipeline:
+pipelines:
   - name: pipeline_1
     setup:
       environmentVariables:
