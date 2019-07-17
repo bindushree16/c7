@@ -1,27 +1,9 @@
 resources:
   - name: sample_1
-    type: gitRepo
-    repoPath: bindushree16/c7
-    configuration:
-      integrationName: github
-      branches:
-        only: master
-      tags:
-        except: none
-        only: none   
-      buildOnCommit: true
-      buildOnPullRequest: true
-      buildOnPullRequestClose: true
-      buildOnRelease: true
-      buildOnTagPush: true
-      buildOnFileCommit: "*test"
-      shallowDepth: 2
-      gitConfig: 
-        - dont_know
-        - dont_know_2
-    initialVersion:
-      sha: master
-
+    type: GitRepo
+    path: bindushree16/c7
+    gitProvider: my_integration
+    
 pipelines:
   - name: pipeline_1           
     steps:    
